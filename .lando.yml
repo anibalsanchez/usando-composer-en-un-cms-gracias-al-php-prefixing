@@ -1,0 +1,28 @@
+##
+# package     Using Composer in a Content Management System
+# subpackage  Lando
+#
+# author      Anibal Sanchez @anibal_sanchez
+# copyright   Copyright (C) 2020 Desarrollos Inteligentes Virtuales, SL. All rights reserved.
+# license     https://www.gnu.org/licenses/gpl-3.0.html GNU/GPL
+# link        https://php-prefixer.com
+##
+
+name: using-composer-in-a-content-management-system
+
+proxy:
+  web-service:
+    # http://using-composer-in-a-content-management-system.lndo.site
+    # https://using-composer-in-a-content-management-system.lndo.site
+    - using-composer-in-a-content-management-system.lndo.site
+
+services:
+  web-service:
+    # Use the latest version of nginx.
+    type: nginx
+
+    # Optionally specify a webroot if it is a subdirectory of the appRoot
+    webroot: web
+    ports:
+      # A nice http://localhost:8080
+      - '8080:80'
