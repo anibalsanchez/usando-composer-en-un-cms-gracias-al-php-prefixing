@@ -1,8 +1,8 @@
-# Using Composer in a CMS
+# Usando Composer en un CMS
 
-Welcome, everybody, it's a delight to be here in the Joomlashack conference, presenting "Using Composer in a CMS".
+Welcome, everybody, it's a delight to be here in the Joomlashack conference, presenting "Usando Composer en un CMS".
 
-## About me
+## Acerca de Mí
 
 My name is Aníbal Sánchez. It's a great opportunity be here sharing with you our experiences managing successful projects and developing extensions for Joomla.
 

@@ -1,16 +1,15 @@
-# Using Composer in a CMS <!-- .slide: class="home" data-background-image="images/05-about-me/PHP-Prefixer.svg" data-background-size="auto 16%" data-background-position="90% 10%" -->
+# Usando Composer en un CMS <!-- .slide: class="home" data-background-image="images/05-about-me/PHP-Prefixer.svg" data-background-size="auto 16%" data-background-position="90% 10%" -->
 
-By [Aníbal Sánchez](http://blog.anibalhsanchez.com) <br> [The Joomlashack Conference 2020](https://www.joomlashack.com/conference/) - Dec 10, 2020 / 10:00 am EST
+By [Aníbal Sánchez](http://blog.anibalhsanchez.com) <br> [PHPMad Meetup - Octubre 2021](https://www.meetup.com/phpmad) - 27 de Octubre 2021 a las 19:00 CEST
 
 
-## In this workshop <!-- .slide: class="list-small" -->
+## En este taller <!-- .slide: class="list-small" -->
 
-- What is Composer?
-- Motivation of Composer Usage
-- Composer in Joomla terms
-- Where is the catch?
-- Using Laravel in a Joomla extension
-- How to prefix PHP source code
-- Conclusion
+- ¿Qué es Composer?
+- Motivación del uso de Composer
+- ¿Dónde está la trampa?
+- Usando Laravel en una extensión de Joomla
+- Cómo prefijar el código fuente PHP
+- Conclusión
 
-Slides: [ppub.link/usingcomposer](http://ppub.link/usingcomposer)<!-- .slide: class="small" -->
+Slides: [ppub.link/usandocomposer](http://ppub.link/usandocomposer)<!-- .slide: class="small" -->

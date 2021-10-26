@@ -2,7 +2,7 @@
 
 La presentación será acerca de cómo usar Composer en WordPress, Joomla, sistemas multiusuario o cualquier sistema de gestión de contenido.
 
-- **PHPMad Meetup**
+- **PHPMad Meetup** - https://www.meetup.com/phpmad
 - 27 de Octubre 2021 a las 19:00
 - 19:00 CEST. [Comprueba tu zona horaria](https://www.timeanddate.com/worldclock/converter.html?iso=20211001T190000&p1=141)
 - Por [Anibal Sanchez](https://blog.anibalhsanchez.com)

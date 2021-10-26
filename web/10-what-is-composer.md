@@ -1,17 +1,15 @@
-# Prerequisites <!-- .slide: class="list-small" -->
+# ¿Qué es Composer? <!-- .slide: class="list-small" -->
 
-- PHP development
-- Joomla management
-- Extension development
+![¿Qué es Composer?](images/10-what-is-composer/logo-composer-transparent5.png)<!-- .element: class="w-12" -->
+
+[getcomposer.org](https://getcomposer.org)
 
 
-## What is Composer? <!-- .slide: class="list-small" -->
+![¿Qué es Composer?](images/10-what-is-composer/logo-composer-transparent2.png)<!-- .element: class="w-12" -->
 
-![What is Composer?](images/10-what-is-composer/logo-composer-transparent5.png)<!-- .element: class="w-12" -->
-
-- A Dependency Manager for PHP - [getcomposer.org](https://getcomposer.org)
-- An application-level package manager
-- It's strongly inspired by Node.js's "npm" and Ruby's "bundler"
+- Una Administrador de Dependencias (Librerías)
+- Un Administrador de Paquetes a nivel de aplicación
+- Está fuertemente inspirado por Node.js's "npm" y Ruby's "bundler"
 
 
 ## Packagist <!-- .slide: class="p-small" data-background-image="images/10-what-is-composer/logo-packagist-small.png" data-background-size="auto auto" data-background-position="90% 10%" data-visibility="hidden" -->
@@ -19,19 +17,18 @@
 ![Packagist Site](images/10-what-is-composer/packagist-site.jpg)<!-- .element: class="w-50" -->
 
 
-## Packagist - Statistics <!-- .slide: data-background-image="images/10-what-is-composer/logo-packagist-small.png" data-background-size="auto auto" data-background-position="90% 10%" data-visibility="hidden" -->
+## Packagist - Estadísticas <!-- .slide: data-background-image="images/10-what-is-composer/logo-packagist-small.png" data-background-size="auto auto" data-background-position="90% 10%" data-visibility="hidden" -->
 
 ![Packagist stats](images/10-what-is-composer/packagist-stats.png)<!-- .element: class="w-50" -->
 
-- 290 K Packages
-- 1200 M Installs/mo
+- 323 K Packages
+- 1600 M Installs/mo (Septiembre 2021)
 
 
-## Featured Packages <!-- .slide: class="table-small" data-visibility="hidden" -->
+## Paquetes Destacados <!-- .slide: class="table-small" data-visibility="hidden" -->
 
 Package Name | Downloads
 ------------ | -------------
-symfony/polyfill-mbstring | 281 187 883
 symfony/console | 259 558 850
 guzzlehttp/guzzle | 227 583 337
 monolog/monolog | 251 635 763
@@ -41,126 +38,37 @@ league/flysystem | 133 508 404
 laravel/framework | 114 282 476
 
 
-## The motivation
+## La Motivación
 
 <div class="fragment fade-up">
     <figure>
         <blockquote>
-            <p>If I have seen further it is by standing on the shoulders of Giants.</p>
+            <p>Si he logrado ver más lejos ha sido porque he subido a hombros de gigantes</p>
         </blockquote>
         <figcaption>—Isaac Newton</figcaption>
     </figure>
 </div>
 
 
-## More reasons <!-- .slide: class="list-small list-none" -->
+## Más Razones <!-- .slide: class="list-small list-none" -->
 
-- Adopt the most recent PHP innovations ✔
-- Use other frameworks / methodologies ✔
-- Separation of Concerns ✔
-- Better definition of the Domain ✔
-- Focus on business development ✔
-- Develop with a CMS-agnostic stack ✔
-
-
-## The motivation <!-- .slide: class="list-small" -->
-
-![Classic extension](images/10-what-is-composer/cms-extension-traditional.png)<!-- .element: class="w-80" -->
-
-Classic extension <!-- .slide: class="small" -->
+- Compartir Código Abierto y Buenas Prácticas ✔
+- Adoptar las innovaciones PHP más recientes ✔
+- Usar frameworks populares y probados ✔
+- Separación de Intereses (SoC) ✔
+- Centrarse en el desarrollo de negocio ✔
+- Mejor definición del Dominio ✔
+- Desarrolle independiente del CMS ✔
 
 
-## The motivation <!-- .slide: class="list-small" -->
+## Composer como una "Herramienta" de Comunicación <!-- .slide: class="list-small" -->
 
-![A modern solution centered on a library](images/10-what-is-composer/cms-modern-extension.png)<!-- .element: class="w-80" -->
-
-A modern solution centered on a library <!-- .slide: class="small" -->
-
-
-## Composer in Joomla terms <!-- .slide: data-visibility="hidden" -->
-
-```json [1-4|10-13|29-44]
-{
-    "name": "joomla/joomla-cms",
-    "type": "project",
-    "description": "Joomla CMS",
-    "keywords": ["joomla", "cms"],
-    "homepage": "https://github.com/joomla/joomla-cms",
-    "license": "GPL-2.0-or-later",
-    "config": {
-        "optimize-autoloader": true,
-        "platform": {
-            "php": "5.3.10"
-        },
-        "vendor-dir": "libraries/vendor",
-        "github-protocols": ["https"]
-    },
-    "support": {
-        "issues": "https://issues.joomla.org",
-        "irc": "https://irc.lc/freenode/joomla/",
-        "forum": "https://forum.joomla.org/",
-        "docs": "https://docs.joomla.org"
-    },
-    "repositories": [
-      {
-        "type": "github",
-        "url": "https://github.com/joomla-backports/lessphp.git"
-      }
-    ],
-    "require": {
-        "php": ">=5.3.10",
-        "joomla/application": "~1.9",
-        "joomla/archive": "^1.1.7",
-        "joomla/data": "~1.2",
-        "joomla/di": "~1.5",
-        "joomla/event": "~1.2",
-        "joomla/filter": "^1.3.2",
-        "joomla/image": "^1.5",
-        "joomla/input": "~1.3",
-        "joomla/ldap": "~1.2",
-        "joomla/registry": "^1.6",
-        "joomla/session": "^1.3.4",
-        "joomla/string": "^1.4",
-        "joomla/uri": "~1.2",
-        "joomla/utilities": "^1.6",
-        "ircmaxell/password-compat": "1.*",
-        "leafo/lessphp": "dev-joomla3-php8",
-        "paragonie/random_compat": "~1.4",
-        "paragonie/sodium_compat": "1.9.1",
-        "phpmailer/phpmailer": "^5.2.20",
-        "symfony/polyfill-php55": "~1.9",
-        "symfony/polyfill-php56": "~1.9",
-        "symfony/polyfill-php71": "~1.9",
-        "symfony/polyfill-php73": "~1.9",
-        "symfony/yaml": "2.*",
-        "simplepie/simplepie": "1.3.1",
-        "google/recaptcha": "^1.1",
-        "typo3/phar-stream-wrapper": "^2.1"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^4.8.35",
-        "phpunit/dbunit": "~1.3",
-        "friendsofphp/php-cs-fixer": "~1.11",
-        "squizlabs/php_codesniffer": "~1.5",
-        "pear/cache_lite": "1.7.16"
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
-}
-```
+- Acceso al Hub de Packagist
+- Acceso Directo a Repositorios Públicos/ Privados
+- Uso de Autoloaders Estándars
 
 
-## The extensions can use Composer
-
-
-## Composer as an "utility" <!-- .slide: class="list-small" -->
-
-- Forget `JLoader` & `jimport`
-- Embrace `require .../vendor/autoload.php;`
-- Use Composer Autoloaders
-
-
-## FIG PSR-4 Standard<!-- .slide: class="table-tiny" -->
+## FIG PSR-4 Estándar<!-- .slide: class="table-tiny" -->
 
 Fully Qualified Class Name|Namespace|Directory|File Path
 ---------|----------|---------|---------
@@ -170,7 +78,7 @@ Fully Qualified Class Name|Namespace|Directory|File Path
 \Zend\Acl | Zend | /usr/includes/Zend/ | /usr/includes/Zend/Acl.php
 
 
-## PSR-4 Example<!-- .slide: class="table-small" -->
+## Ejemplo PSR-4<!-- .slide: class="table-small" -->
 
 ```json
 ...
@@ -190,7 +98,7 @@ Fully Qualified Class Name|Namespace|Directory|File Path
 ```
 
 
-## Classmap & Autoloading
+## Mapa de Clases y Carga Automática
 
 ```json
 ...
@@ -205,12 +113,12 @@ Fully Qualified Class Name|Namespace|Directory|File Path
 ...
 ```
 
-Handy autoloader generation to migrate legacy extensions.<!-- .element: class="small" -->
+Autoloader rápido para migrar liberías legacy.<!-- .element: class="small" -->
 
 
-## Generated maps
+## Generación Rápida de Autoloaders Optimizados
 
-![Composer Autoloading files](images/10-what-is-composer/composer-tree.png)<!-- .element: class="w-33" -->
+![Generación Rápida de Autoloaders Optimizados](images/10-what-is-composer/composer-tree.png)<!-- .element: class="w-25" -->
 
 ```sh
 # TIP
@@ -218,46 +126,37 @@ $ composer dump-autoload --classmap-authoritative
 ```
 
 
-## The extensions can use Composer <!-- .slide: data-visibility="hidden" -->
+## Todo dentro del Plugin
 
-```json [1-3|14-18]
+![Estructura del Plugin](images/10-what-is-composer/file-structure-of-wp-plugin-with-composer.png)<!-- .element: class="w-80" -->
+
+El plugin contiene todos las librerías definidas en ´composer.json´.<!-- .element: class="small" -->
+
+
+## Un plugin de WordPress plugin puede usar Composer
+
+```json
 {
-    "name": "anibalsanchez/perfect-publisher-legacy",
-    "description": "Perfect Publisher Legacy Helpers Library.",
-    "authors": [
-        {
-            "name": "Extly CB",
-            "email": "team@extly.com"
-        }
-    ],
-    "license": "GPL-3.0-or-later",
+    "name": "php-prefixer/using-guzzle-in-a-word-press-plug-in-with-php-prefixer",
+    "description": "Using Guzzle in a WordPress plug-in with PHP-Prefixer. A plugin to showcase the PHP-Prefixer service. Install any library freely. PHP-Prefixer will manage your namespaces.",
     "require": {
-        "php": ">=5.6"
+        "guzzlehttp/guzzle": "^7.3"
     },
-    "autoload": {
-        "classmap": [
-            "src"
-        ]
-    },
-    "config": {
-        "preferred-install": "dist",
-        "sort-packages": true,
-        "optimize-autoloader": true
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    "extra": {
+        "php-prefixer": {
+            "project-name": "Using Guzzle in a WordPress plug-in with PHP-Prefixer",
+            "namespaces-prefix": "PPP",
+            "global-scope-prefix": "PPP_",
+            "exclude-paths": [
+                "bin/"
+            ]
+        }
+    }
 }
 ```
 
 
-## Everything in the library
-
-![Package structure](images/10-what-is-composer/file-structure-of-j-extension.png)<!-- .element: class="w-50" -->
-
-Packages and Libraries are the best structure to incorporate Composer.<!-- .element: class="small" -->
-
-
-## The Laravel Starter <!-- .slide: class="list-small" data-background-repeat="no-repeat" data-background-image="images/10-what-is-composer/logomark.min.svg" data-background-size="8% auto" data-background-position="90% 10%" class="list-small" -->
+## The Laravel Starter <!-- .slide: class="list-small" data-background-repeat="no-repeat" data-background-image="images/10-what-is-composer/WordPress-isologo-web.svg" data-background-size="8% auto" data-background-position="90% 10%" class="list-small" -->
 
 ![Package structure](images/10-what-is-composer/xt-laravel-starter-project.png)<!-- .element: class="w-50" -->
 

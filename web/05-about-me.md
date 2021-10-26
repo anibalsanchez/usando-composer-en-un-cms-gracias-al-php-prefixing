@@ -1,4 +1,4 @@
-# About me
+# Acerca de Mí
 
 
 ## Aníbal Sánchez <!-- .slide: class="who" data-background-repeat="no-repeat" data-background-image="images/05-about-me/anibal-0612-200.jpg" data-background-size="auto auto" data-background-position="95% 5%" -->
@@ -7,10 +7,10 @@
 - Product Manager @ [PHP-Prefixer](https://php-prefixer.com)
 
 
-## A volunteer <!-- .slide: data-background-image="images/05-about-me/joomla_logo.png" data-background-size="auto auto" data-background-position="90% 10%" -->
+## Un Voluntario <!-- .slide: data-background-image="images/05-about-me/joomla_logo.png" data-background-size="auto auto" data-background-position="90% 10%" -->
 
 <blockquote cite="https://www.joomla.org/">
-  &ldquo;Joomla! is an award-winning content management system (CMS), which enables you to build web sites and powerful online applications. - [www.joomla.org](https://www.joomla.org)&rdquo;
+  &ldquo;<b>Joomla</b> es un sistema de gestión de contenidos (o CMS) que permite desarrollar sitios web dinámicos e interactivos. - <a href="https://www.joomla.org" target="_blank">joomla.org</a>&rdquo;
 </blockquote> <!-- .element: class="small" -->
 
 - <!-- .element: class="small" --> Extensions Directory (JED) Team Leader / Jan 2019 - Dec 2020
@@ -20,26 +20,18 @@
 
 ![Perfect Publisher](images/05-about-me/Perfect-Publisher-product.svg)<!-- .element: class="w-25" -->
 
-Share your content and engage your audience
+Comparta Su Contenido e Inspire A Su Audiencia
 
-- +30 Social Media Integrations
-- Powered by **+60 Composer Libraries**
+- +30 Integraciones de Redes Sociales
+- Potenciado por **+60 Librerías Composer**
 
 
 ## XT Search for Algolia <!-- .slide: class="who" data-background-repeat="no-repeat" data-background-image="images/05-about-me/extly-logo.svg" data-background-size="12% auto" data-background-position="90% 10%" class="list-small" -->
 
 ![XT Search for Algolia](images/05-about-me/xt-search-for-algolia.svg)<!-- .element: class="w-25" -->
 
-Integrate effortlessly a cloud-based search service
+Integre sin esfuerzo un servicio de búsqueda basado en la nube
 
-- Instant and reliable search for your website
-- Based on the official **Algolia's Composer library** & NPM widgets
-- Available for Joomla & PrestaShop
-
-
-## <!-- .slide: class="who" data-background-repeat="no-repeat" data-background-image="images/05-about-me/extly-logo.svg" data-background-size="12% auto" data-background-position="90% 10%" class="list-small" -->
-
-![SI San Juan, Argentina newspaper](images/05-about-me/si-san-juan-web.jpg)<!-- .element: class="w-50" -->
-
-- San Juan, Argentina newspaper. By [Imagen y Sistemas](https://imagenysistemas.com.ar) & [Extly Tech](https://www.extly.com)
-- Joomla High Availability, managed with a **Laravel-Redis Cache on AWS**
+- Búsqueda instantánea y confiable para su sitio web
+- Basado en la librería Composer oficial de Algolia
+- Compatible con Joomla y PrestaShop
