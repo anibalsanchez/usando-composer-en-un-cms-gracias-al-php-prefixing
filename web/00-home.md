@@ -7,9 +7,9 @@ By [Aníbal Sánchez](http://blog.anibalhsanchez.com) <br> [PHPMad Meetup - Octu
 
 - ¿Qué es Composer?
 - Motivación del uso de Composer
-- ¿Dónde está la trampa?
-- Usando Laravel en una extensión de Joomla
-- Cómo prefijar el código fuente PHP
+- ¿Cuál es el problema?
+- Usando Composer en un plugin WordPress
+- Cómo usar **Prefijos** en el código fuente PHP
 - Conclusión
 
 Slides: [ppub.link/usandocomposer](http://ppub.link/usandocomposer)<!-- .slide: class="small" -->

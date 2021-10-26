@@ -61,10 +61,10 @@ laravel/framework | 114 282 476
 - Desarrolle independiente del CMS ✔
 
 
-## Composer como una "Herramienta" de Comunicación <!-- .slide: class="list-small" -->
+## Composer como una <br>"Herramienta" de Comunicación <!-- .slide: class="list-small" -->
 
-- Acceso al Hub de Packagist
-- Acceso Directo a Repositorios Públicos/ Privados
+- Acceso al hub de Packagist
+- Acceso directo a Repositorios Públicos/ Privados
 - Uso de Autoloaders Estándars
 
 
@@ -126,112 +126,55 @@ $ composer dump-autoload --classmap-authoritative
 ```
 
 
-## Todo dentro del Plugin
+## Un plugin de WordPress usando Composer
+
+![Estructura del Plugin](images/10-what-is-composer/wp-using-guzzle-in-a-word-press-plug-in-with-php-prefixer.png)<!-- .element: class="w-80" -->
+
+El plugin "Hello Dolly", pero consultando un API con Datos Interesantes.<!-- .element: class="small" -->
+<https://blog.php-prefixer.com/2021/10/20/using-guzzle-in-a-wordpress-plugin-with-php-prefixer/><!-- .element: class="small" -->
+
+
+## Un plugin de WordPress usando Composer
 
 ![Estructura del Plugin](images/10-what-is-composer/file-structure-of-wp-plugin-with-composer.png)<!-- .element: class="w-80" -->
 
 El plugin contiene todos las librerías definidas en ´composer.json´.<!-- .element: class="small" -->
+<https://github.com/PHP-Prefixer/using-guzzle-in-a-word-press-plug-in-with-php-prefixer><!-- .element: class="small" -->
 
 
-## Un plugin de WordPress plugin puede usar Composer
-
-```json
-{
-    "name": "php-prefixer/using-guzzle-in-a-word-press-plug-in-with-php-prefixer",
-    "description": "Using Guzzle in a WordPress plug-in with PHP-Prefixer. A plugin to showcase the PHP-Prefixer service. Install any library freely. PHP-Prefixer will manage your namespaces.",
-    "require": {
-        "guzzlehttp/guzzle": "^7.3"
-    },
-    "extra": {
-        "php-prefixer": {
-            "project-name": "Using Guzzle in a WordPress plug-in with PHP-Prefixer",
-            "namespaces-prefix": "PPP",
-            "global-scope-prefix": "PPP_",
-            "exclude-paths": [
-                "bin/"
-            ]
-        }
-    }
-}
-```
-
-
-## The Laravel Starter <!-- .slide: class="list-small" data-background-repeat="no-repeat" data-background-image="images/10-what-is-composer/WordPress-isologo-web.svg" data-background-size="8% auto" data-background-position="90% 10%" class="list-small" -->
-
-![Package structure](images/10-what-is-composer/xt-laravel-starter-project.png)<!-- .element: class="w-50" -->
-
-- [anibalsanchez/xt-laravel-starter-for-joomla](https://github.com/anibalsanchez/xt-laravel-starter-for-joomla) - The "Entry Points"
-- [anibalsanchez/xt-laravel-starter-for-joomla-library](https://github.com/anibalsanchez/xt-laravel-starter-for-joomla-library) - "The Library"
-
-
-## The View<!-- .slide: class="list-small" data-background-repeat="no-repeat" data-background-image="images/10-what-is-composer/logomark.min.svg" data-background-size="8% auto" data-background-position="90% 10%" class="list-small" -->
-
-```php
-Route::get('/', function () {
-    $articles = Article::where('state', 1)
-        ->orderBy('title', 'asc')
-        ->take(10)
-        ->get();
-
-    return view('welcome', ['articles' => $articles]);
-});
-```
-
-Using the Eloquent model and a Blade view.
-
-
-## Where is the catch <!-- .slide: data-background-image="images/10-what-is-composer/composer-two-developers.jpg" data-background-size="75% auto" data-background-position="50% 50%" class="slide-hero" -->
+## ¿Cuál es el problema? <!-- .slide: data-background-image="images/10-what-is-composer/composer-two-developers.jpg" data-background-size="75% auto" data-background-position="50% 50%" class="slide-hero" -->
 
 Photos by Kelly Sikkema and LagosTechie on Unsplash.<!-- .element: class="tiny" -->
 
 
-## Where is the catch - Example
+## Si dos desarrolladores independientes trabajan con Composer ...
 
-```json [14-18]
-{
-    "name": "extly/xtlaravelstarter",
-    "type": "project",
-    "description": "This project is a good starting point to begin using the Laravel Framework on Joomla.",
-    "keywords": [
-        "joomla",
-        "framework",
-        "laravel"
-    ],
-    "license": "MIT",
-    "require": {
-        "php": "^7.3 || ^8.0",
-        "fideloper/proxy": "^4.4",
-        "fruitcake/laravel-cors": "^2.0",
-        "guzzlehttp/guzzle": "^7.0.1",
-        "laravel/framework": "^8.12",
-        "laravel/tinker": "^2.5",
-        "laravel/ui": "^3.1"
-    },
-...
-```
+- Desarrollador A ➡ `guzzlehttp/guzzle:^5.3`
+- Desarrollador B ➡ `guzzlehttp/guzzle:^7.4`
+
+Dos desarrolladores independientes pueden elegir una versión de biblioteca diferente o bibliotecas con los mismos espacios de nombres, y el administrador del sitio puede instalarlas en el mismo sitio.<!-- .element: class="small" -->
 
 
-## Two teams
+## Si desarrollo un sistema 2019 y luego vuelvo a trabajar en 2021 ...
 
-- Developer A ➡ `guzzlehttp/guzzle:^7.0`
-- Developer B ➡ `guzzlehttp/guzzle:^5.3`
+- Año 2019 ➡ `guzzlehttp/guzzle:^5.3`
+- Año 2021 ➡ `guzzlehttp/guzzle:^7.4`
 
-Two independent developers can choose different library version, or libraries with the same namespaces, and the site admin can install them on the site same.<!-- .element: class="small" -->
+El mismo desarrollador "por tiempos" puede tener que desarrollar con diferentes versiones.<!-- .element: class="small" -->
 
 
-## A conflict
+## Un conflicto
 
-```php [3-5|10-12]
-// Guzzle 7 - Send an asynchronous request.
-$request = new \GuzzleHttp\Psr7\Request('GET', 'http://httpbin.org');
-$promise = $client->sendAsync($request)->then(function ($response) {
-    echo 'I completed! ' . $response->getBody();
-});
-$promise->wait();
-
+```php [3|9]
 // Guzzle 5.3 - Send an asynchronous request.
 $req = $client->createRequest('GET', 'http://httpbin.org', ['future' => true]);
 $client->send($req)->then(function ($response) {
     echo 'I completed! ' . $response;
+});
+
+// Guzzle 7 - Send an asynchronous request.
+$request = new \GuzzleHttp\Psr7\Request('GET', 'http://httpbin.org');
+$promise = $client->sendAsync($request)->then(function ($response) {
+    echo 'I completed! ' . $response->getBody();
 });
 ```
