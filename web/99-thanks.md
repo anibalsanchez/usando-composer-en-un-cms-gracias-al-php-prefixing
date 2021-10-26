@@ -1,8 +1,8 @@
-# Conclusión
+# Conclusión <!-- .slide: data-background-image="images/05-about-me/PHP-Prefixer.svg" data-background-size="auto 10%" data-background-position="95% 5%" class="list-small" -->
 
-✔ Una nueva forma de diseñar soluciones basadas en Composer y bibliotecas.<!-- .element: class="fragment fade-up" -->
+✔ [PHP-Prefixer](https://php-prefixer.com) ofrece una forma operativa de diseñar soluciones basadas en Composer.
 
-✔ Funciona para independizar paquete.<!-- .element: class="fragment fade-up" -->
+✔ Funciona para independizar paquetes.<!-- .element: class="fragment fade-up" -->
 
 ✔ Se puede aplicar en soluciones ya desarrolladas.<!-- .element: class="fragment fade-up" -->
 
@@ -11,7 +11,7 @@
 ✔ Ayuda en la migración de aplicaciones legacy.<!-- .element: class="fragment fade-up" -->
 
 
-## Preguntas - Comentarios <!-- .slide: class="p-small" -->
+## Preguntas - Comentarios <!-- .slide: data-background-image="images/05-about-me/PHP-Prefixer.svg" data-background-size="auto 10%" data-background-position="95% 5%" class="p-small" -->
 
 ![alt](images/99-thanks/light-863150_640.jpg)<!-- .element: style="width: 40%" -->
 

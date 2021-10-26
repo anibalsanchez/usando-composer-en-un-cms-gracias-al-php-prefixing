@@ -126,19 +126,21 @@ $ composer dump-autoload --classmap-authoritative
 ```
 
 
-## Un plugin de WordPress usando Composer
+## Un plugin de WordPress usando Composer <!-- .slide: data-background-image="images/05-about-me/PHP-Prefixer.svg" data-background-size="auto 10%" data-background-position="95% 5%" -->
 
 ![Estructura del Plugin](images/10-what-is-composer/wp-using-guzzle-in-a-word-press-plug-in-with-php-prefixer.png)<!-- .element: class="w-80" -->
 
 El plugin "Hello Dolly", pero consultando un API con Datos Interesantes.<!-- .element: class="small" -->
+<br>
 <https://blog.php-prefixer.com/2021/10/20/using-guzzle-in-a-wordpress-plugin-with-php-prefixer/><!-- .element: class="small" -->
 
 
-## Un plugin de WordPress usando Composer
+## Un plugin de WordPress usando Composer <!-- .slide: data-background-image="images/05-about-me/PHP-Prefixer.svg" data-background-size="auto 10%" data-background-position="95% 5%" -->
 
 ![Estructura del Plugin](images/10-what-is-composer/file-structure-of-wp-plugin-with-composer.png)<!-- .element: class="w-80" -->
 
 El plugin contiene todos las librerías definidas en ´composer.json´.<!-- .element: class="small" -->
+<br>
 <https://github.com/PHP-Prefixer/using-guzzle-in-a-word-press-plug-in-with-php-prefixer><!-- .element: class="small" -->
 
 

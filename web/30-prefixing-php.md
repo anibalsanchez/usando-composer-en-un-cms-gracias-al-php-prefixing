@@ -1,4 +1,4 @@
-# Prefijos en PHP <!-- .slide: class="p-small" -->
+# Prefijos en PHP <!-- .slide: data-background-image="images/05-about-me/PHP-Prefixer.svg" data-background-size="auto 10%" data-background-position="95% 5%" class="p-small" -->
 
 Caso 1: Fragmento de código de `nesbot/carbon`, una extensión para el API del DateTime.
 
@@ -15,7 +15,7 @@ class Carbon extends DateTime
 ```
 
 
-## Prefijos en el namespace<!-- .slide: class="p-small" -->
+## Prefijos en el namespace<!-- .slide: data-background-image="images/05-about-me/PHP-Prefixer.svg" data-background-size="auto 10%" data-background-position="95% 5%" class="p-small" -->
 
 Caso 1: Fragmento de código de `nesbot/carbon` con el prefijo `Extly`.
 
@@ -32,7 +32,7 @@ class Carbon extends DateTime
 ```
 
 
-## Prefijos en PHP - Caso 2<!-- .slide: class="p-small" -->
+## Prefijos en PHP - Caso 2<!-- .slide: data-background-image="images/05-about-me/PHP-Prefixer.svg" data-background-size="auto 10%" data-background-position="95% 5%" class="p-small" -->
 
 Caso 2: Fragmento de código librería Laravel `illuminate/support`.
 
@@ -50,7 +50,7 @@ if (! function_exists('app')) {
 ```
 
 
-## Prefijos en PHP - Caso 2 <!-- .slide: class="p-small" -->
+## Prefijos en PHP - Caso 2 <!-- .slide: data-background-image="images/05-about-me/PHP-Prefixer.svg" data-background-size="auto 10%" data-background-position="95% 5%" class="p-small" -->
 
 Caso 2: Fragmento de código de la librería Laravel `illuminate/support` con el prefijo `XT_`.
 
@@ -68,7 +68,7 @@ if (! function_exists('XT_app')) {
 ```
 
 
-## Un plugin de WordPress usando Composer
+## Un plugin de WordPress usando Composer <!-- .slide: data-background-image="images/05-about-me/PHP-Prefixer.svg" data-background-size="auto 10%" data-background-position="95% 5%" class="p-small" -->
 
 ```json [8-11]
 {
@@ -91,7 +91,7 @@ if (! function_exists('XT_app')) {
 ```
 
 
-## Un plugin de WordPress usando Composer
+## Un plugin de WordPress usando Composer <!-- .slide: data-background-image="images/05-about-me/PHP-Prefixer.svg" data-background-size="auto 10%" data-background-position="95% 5%" class="p-small" -->
 
 ```php [1]
 use GuzzleHttp\Client as GuzzleHttpClient;
@@ -107,7 +107,7 @@ function hello_prefixed_guzzle_get_number_fact()
 ```
 
 
-## Un plugin de WordPress usando Composer
+## Un plugin de WordPress usando Composer <!-- .slide: data-background-image="images/05-about-me/PHP-Prefixer.svg" data-background-size="auto 10%" data-background-position="95% 5%" class="p-small" -->
 
 ```php [1]
 use PPP\GuzzleHttp\Client as GuzzleHttpClient;
@@ -123,7 +123,7 @@ function hello_prefixed_guzzle_get_number_fact()
 ```
 
 
-## Aplicando prefijos a proyectos PHP <!-- .slide: class="list-small" -->
+## Aplicando prefijos a proyectos PHP <!-- .slide: data-background-image="images/05-about-me/PHP-Prefixer.svg" data-background-size="auto 10%" data-background-position="95% 5%" class="list-small" -->
 
 Necesitamos aplicar prefijos automáticamente:
 
@@ -133,14 +133,14 @@ Necesitamos aplicar prefijos automáticamente:
 - Diferentes versiones de librerías y PHP
 
 
-## Presentamos PHP Prefixer <!-- .slide: class="p-small" -->
+## Presentamos PHP Prefixer <!-- .slide: data-background-image="images/05-about-me/PHP-Prefixer.svg" data-background-size="auto 10%" data-background-position="95% 5%" class="p-small" -->
 
 ![Presentamos PHP Prefixer](images/30-prefixing-php/php-prefixer.png)<!-- .element: class="w-80" style="border-radius: .25rem; border-width: 1px; border-color: #aaa; border-style: solid;" -->
 
 https://php-prefixer.com - Lanzado en Noviembre 2020
 
 
-## Presentamos PHP Prefixer <!-- .slide: data-background-repeat="no-repeat" data-background-image="images/05-about-me/PHP-Prefixer.svg" data-background-size="8% auto" data-background-position="90% 10%" class="list-small" -->
+## Presentamos PHP Prefixer <!-- .slide: data-background-image="images/05-about-me/PHP-Prefixer.svg" data-background-size="auto 10%" data-background-position="95% 5%" class="list-small" -->
 
 PHP-Prefixer se puede usar:
 
@@ -150,32 +150,32 @@ PHP-Prefixer se puede usar:
 - Con el [API REST](https://php-prefixer.com/docs/command-line/)
 
 
-## Prefijos en PHP - Creación del Proyecto
+## Prefijos en PHP - Creación del Proyecto <!-- .slide: data-background-image="images/05-about-me/PHP-Prefixer.svg" data-background-size="auto 10%" data-background-position="95% 5%" class="p-small" -->
 
 ![Aplicando el prefijo al plugin WordPress - Demo](images/30-prefixing-php/php-prefixer.com_service_resources_projects-01.png)<!-- .element: style="heigth: 80%" -->
 
 
-## Prefijos en PHP - Subir un Build <!-- .slide: data-visibility="hidden" -->
+## Prefijos en PHP - Subir un Build <!-- .slide: data-background-image="images/05-about-me/PHP-Prefixer.svg" data-background-size="auto 10%" data-background-position="95% 5%" class="p-small" -->
 
 ![Aplicando el prefijo al plugin WordPress - Demo](images/30-prefixing-php/php-prefixer.com_service_resources_projects-02.png)<!-- .element: style="heigth: 80%" -->
 
 
-## Prefijos en PHP - Validación <!-- .slide: data-visibility="hidden" -->
+## Prefijos en PHP - Validación <!-- .slide: data-background-image="images/05-about-me/PHP-Prefixer.svg" data-background-size="auto 10%" data-background-position="95% 5%" class="p-small" -->
 
 ![Aplicando el prefijo al plugin WordPress - Demo](images/30-prefixing-php/php-prefixer.com_service_resources_projects-03.png)<!-- .element: style="heigth: 80%" -->
 
 
-## Prefijos en PHP - Proceso <!-- .slide: data-visibility="hidden" -->
+## Prefijos en PHP - Proceso <!-- .slide: data-background-image="images/05-about-me/PHP-Prefixer.svg" data-background-size="auto 10%" data-background-position="95% 5%" class="p-small" -->
 
 ![Aplicando el prefijo al plugin WordPress - Demo](images/30-prefixing-php/php-prefixer.com_service_resources_projects-04.png)<!-- .element: style="heigth: 80%" -->
 
 
-## Prefijos en PHP - Descarga
+## Prefijos en PHP - Descarga <!-- .slide: data-background-image="images/05-about-me/PHP-Prefixer.svg" data-background-size="auto 10%" data-background-position="95% 5%" class="p-small" -->
 
 ![Aplicando el prefijo al plugin WordPress - Demo](images/30-prefixing-php/php-prefixer.com_service_resources_projects-05.png)<!-- .element: style="heigth: 80%" -->
 
 
-## Prefijos en PHP - Pruebas
+## Prefijos en PHP - Pruebas <!-- .slide: data-background-image="images/05-about-me/PHP-Prefixer.svg" data-background-size="auto 10%" data-background-position="95% 5%" class="p-small" -->
 
 ```php
 ~/vendor_prefixed/monolog/monolog$ phpunit
@@ -187,7 +187,8 @@ PHPUnit 5.7.27 by Sebastian Bergmann and contributors.
 Time: 116 ms, Memory: 6.00MB
 ```
 
-## Prefijos en PHP con GitHub Actions
+
+## Prefijos en PHP con GitHub Actions <!-- .slide: data-background-image="images/05-about-me/PHP-Prefixer.svg" data-background-size="auto 10%" data-background-position="95% 5%" class="p-small" -->
 
 ```yml
 #
@@ -216,9 +217,9 @@ jobs:
           project_id: ${{ secrets.PROJECT_ID }}
 ```
 
-Results in the [prefixed](https://github.com/PHP-Prefixer/using-guzzle-in-a-word-press-plug-in-with-php-prefixer/tree/prefixed) branch.
+Los resultados están en la rama [prefixed](https://github.com/PHP-Prefixer/using-guzzle-in-a-word-press-plug-in-with-php-prefixer/tree/prefixed).
 
 
-## Prefijos en PHP con GitHub Actions
+## Prefijos en PHP con GitHub Actions <!-- .slide: data-background-image="images/05-about-me/PHP-Prefixer.svg" data-background-size="auto 10%" data-background-position="95% 5%" class="list-small" -->
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7fq6YM_cyx8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

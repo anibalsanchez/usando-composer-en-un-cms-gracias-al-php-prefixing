@@ -1,4 +1,4 @@
-# Acerca de Mí
+# Acerca de Mí <!-- .slide: data-background-image="images/05-about-me/PHP-Prefixer.svg" data-background-size="auto 10%" data-background-position="95% 5%" -->
 
 
 ## Aníbal Sánchez <!-- .slide: class="who" data-background-repeat="no-repeat" data-background-image="images/05-about-me/anibal-0612-200.jpg" data-background-size="auto auto" data-background-position="95% 5%" -->
