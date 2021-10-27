@@ -7,7 +7,7 @@
 
 ![¿Qué es Composer?](images/10-what-is-composer/logo-composer-transparent2.png)<!-- .element: class="w-12" -->
 
-- Una Administrador de Dependencias (Librerías)
+- Un Administrador de Dependencias (Librerías)
 - Un Administrador de Paquetes a nivel de aplicación
 - Está fuertemente inspirado por Node.js's "npm" y Ruby's "bundler"
 
@@ -58,7 +58,7 @@ laravel/framework | 114 282 476
 - Separación de Intereses (SoC) ✔
 - Centrarse en el desarrollo de negocio ✔
 - Mejor definición del Dominio ✔
-- Desarrolle independiente del CMS ✔
+- Desarrollar independiente del CMS ✔
 
 
 ## Composer como una <br>"Herramienta" de Comunicación <!-- .slide: class="list-small" -->
@@ -139,7 +139,7 @@ El plugin "Hello Dolly", pero consultando un API con Datos Interesantes.<!-- .el
 
 ![Estructura del Plugin](images/10-what-is-composer/file-structure-of-wp-plugin-with-composer.png)<!-- .element: class="w-80" -->
 
-El plugin contiene todos las librerías definidas en ´composer.json´.<!-- .element: class="small" -->
+El plugin contiene todas las librerías definidas en ´composer.json´.<!-- .element: class="small" -->
 <br>
 <https://github.com/PHP-Prefixer/using-guzzle-in-a-word-press-plug-in-with-php-prefixer><!-- .element: class="small" -->
 

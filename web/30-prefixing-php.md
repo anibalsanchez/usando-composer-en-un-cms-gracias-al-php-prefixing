@@ -17,14 +17,14 @@ class Carbon extends DateTime
 
 ## Prefijos en el namespace<!-- .slide: data-background-image="images/05-about-me/PHP-Prefixer.svg" data-background-size="auto 10%" data-background-position="95% 5%" class="p-small" -->
 
-Caso 1: Fragmento de código de `nesbot/carbon` con el prefijo `Extly`.
+Caso 1: Fragmento de código de `nesbot/carbon` con el prefijo `PPP`.
 
 ```php [1-5]
-namespace Extly\Carbon;
+namespace PPP\Carbon;
 
-use Extly\Carbon\Exceptions\InvalidDateException;
+use PPP\Carbon\Exceptions\InvalidDateException;
 use DateInterval;
-use Extly\Symfony\Component\Translation;
+use PPP\Symfony\Component\Translation;
 
 class Carbon extends DateTime
 {
@@ -52,19 +52,19 @@ if (! function_exists('app')) {
 
 ## Prefijos en PHP - Caso 2 <!-- .slide: data-background-image="images/05-about-me/PHP-Prefixer.svg" data-background-size="auto 10%" data-background-position="95% 5%" class="p-small" -->
 
-Caso 2: Fragmento de código de la librería Laravel `illuminate/support` con el prefijo `XT_`.
+Caso 2: Fragmento de código de la librería Laravel `illuminate/support` con el prefijo `PPP_`.
 
 ```php [3-4|9-10]
 use Extly\Illuminate\Container\Container;
 
-if (! function_exists('XT_abort')) {
-    function XT_abort($code, $message = '')
+if (! function_exists('PPP_abort')) {
+    function PPP_abort($code, $message = '')
     {
-        return XT_app()->abort($code, $message, $headers);
+        return PPP_app()->abort($code, $message, $headers);
 ...
 
-if (! function_exists('XT_app')) {
-    function XT_app($make = null)
+if (! function_exists('PPP_app')) {
+    function PPP_app($make = null)
 ```
 
 
@@ -142,12 +142,12 @@ https://php-prefixer.com - Lanzado en Noviembre 2020
 
 ## Presentamos PHP Prefixer <!-- .slide: data-background-image="images/05-about-me/PHP-Prefixer.svg" data-background-size="auto 10%" data-background-position="95% 5%" class="list-small" -->
 
-PHP-Prefixer se puede usar:
+El servicio de prefijos se puede usar:
 
 - En el [sitio Web](https://php-prefixer.com), subiendo y bajando un ZIPs
 - Por Comando de Linea [CLI](https://php-prefixer.com/docs/command-line/)
 - Con [GitHub Actions](https://php-prefixer.com/docs/command-line/)
-- Con el [API REST](https://php-prefixer.com/docs/command-line/)
+- Con el Web Service [php-prefixer.com/api](https://php-prefixer.com/docs/rest-api-reference/)
 
 
 ## Prefijos en PHP - Creación del Proyecto <!-- .slide: data-background-image="images/05-about-me/PHP-Prefixer.svg" data-background-size="auto 10%" data-background-position="95% 5%" class="p-small" -->
