@@ -1,7 +1,9 @@
 # Acerca de Mí <!-- .slide: data-background-image="images/05-about-me/PHP-Prefixer.svg" data-background-size="auto 10%" data-background-position="95% 5%" -->
 
 
-## Aníbal Sánchez <!-- .slide: class="who" data-background-repeat="no-repeat" data-background-image="images/05-about-me/anibal-0612-200.jpg" data-background-size="auto auto" data-background-position="95% 5%" -->
+## Aníbal Sánchez <!-- .slide: class="who" data-background-repeat="no-repeat" data-background-image="images/05-about-me/anibal-0612-200.jpg" data-background-size="auto auto" data-background-position="95% 5%" class="list-small" -->
+
+Oviedo, Asturias, España<!-- .element: class="small" -->
 
 - Team Leader @ [Extly Tech](https://www.extly.com)
 - Product Manager @ [PHP-Prefixer](https://php-prefixer.com)
@@ -10,15 +12,6 @@
   - Joomla,
   - PrestaShop y
   - WordPress
-
-
-## Un Voluntario <!-- .slide: data-background-image="images/05-about-me/joomla_logo.png" data-background-size="auto auto" data-background-position="90% 10%" data-visibility="hidden" -->
-
-<blockquote cite="https://www.joomla.org/">
-  &ldquo;<b>Joomla</b> es un sistema de gestión de contenidos (o CMS) que permite desarrollar sitios web dinámicos e interactivos. - <a href="https://www.joomla.org" target="_blank">joomla.org</a>&rdquo;
-</blockquote> <!-- .element: class="small" -->
-
-- <!-- .element: class="small" --> Extensions Directory (JED) Team Leader / Jan 2019 - Dec 2020
 
 
 ## Perfect Publisher <!-- .slide: class="who" data-background-repeat="no-repeat" data-background-image="images/05-about-me/extly-logo.svg" data-background-size="12% auto" data-background-position="90% 10%" class="list-small" -->

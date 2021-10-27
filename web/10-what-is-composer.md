@@ -12,12 +12,12 @@
 - Está fuertemente inspirado por Node.js's "npm" y Ruby's "bundler"
 
 
-## Packagist <!-- .slide: class="p-small" data-background-image="images/10-what-is-composer/logo-packagist-small.png" data-background-size="auto auto" data-background-position="90% 10%" data-visibility="hidden" -->
+## Packagist <!-- .slide: class="p-small" data-background-image="images/10-what-is-composer/logo-packagist-small.png" data-background-size="auto auto" data-background-position="90% 10%" -->
 
 ![Packagist Site](images/10-what-is-composer/packagist-site.jpg)<!-- .element: class="w-50" -->
 
 
-## Packagist - Estadísticas <!-- .slide: data-background-image="images/10-what-is-composer/logo-packagist-small.png" data-background-size="auto auto" data-background-position="90% 10%" data-visibility="hidden" -->
+## Packagist - Estadísticas <!-- .slide: data-background-image="images/10-what-is-composer/logo-packagist-small.png" data-background-size="auto auto" data-background-position="90% 10%" -->
 
 ![Packagist stats](images/10-what-is-composer/packagist-stats.png)<!-- .element: class="w-50" -->
 
@@ -25,7 +25,7 @@
 - 1600 M Installs/mo (Septiembre 2021)
 
 
-## Paquetes Destacados <!-- .slide: class="table-small" data-visibility="hidden" -->
+## Paquetes Destacados <!-- .slide: class="table-small" -->
 
 Package Name | Downloads
 ------------ | -------------
