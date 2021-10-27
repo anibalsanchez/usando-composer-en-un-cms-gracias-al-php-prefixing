@@ -223,3 +223,17 @@ Los resultados están en la rama [prefixed](https://github.com/PHP-Prefixer/usin
 ## Prefijos en PHP con GitHub Actions <!-- .slide: data-background-image="images/05-about-me/PHP-Prefixer.svg" data-background-size="auto 10%" data-background-position="95% 5%" class="list-small" -->
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7fq6YM_cyx8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+## Otras formas de prefijar <!-- .slide: data-background-image="images/05-about-me/PHP-Prefixer.svg" data-background-size="auto 10%" data-background-position="95% 5%" class="table-tiny" -->
+
+&nbsp;| PHP-Prefixer | Búsqueda-Reemplazo
+---------|----------|---------
+Método de prefijo | Comprende y analiza (sintaxis/ semántica) PHP. Reemplaza lo necesario | "Búsqueda y reemplazo" de patrones
+Modelo | Software como Servicio | Comando de Línea
+Instalación | Servicio en la Nube | Requerido
+PHAR | Cliente API | Requerido
+Prefijo de Plugin WordPress | Basado en `composer.json` | Require Configuración de Patrones
+Autoloading despues del Prefijo | Si | No
+Servicio de Soporte | Si, Soporte Completo | Soporte Comunitario
+Costo | Subscripción / Pay As You Go | Gratis (exlcuyendo el tiempo de gestión)

@@ -139,7 +139,7 @@ El plugin "Hello Dolly", pero consultando un API con Datos Interesantes.<!-- .el
 
 ![Estructura del Plugin](images/10-what-is-composer/file-structure-of-wp-plugin-with-composer.png)<!-- .element: class="w-80" -->
 
-El plugin contiene todas las librerías definidas en ´composer.json´.<!-- .element: class="small" -->
+El plugin contiene todas las librerías definidas en `composer.json`.<!-- .element: class="small" -->
 <br>
 <https://github.com/PHP-Prefixer/using-guzzle-in-a-word-press-plug-in-with-php-prefixer><!-- .element: class="small" -->
 

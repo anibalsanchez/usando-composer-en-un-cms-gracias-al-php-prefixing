@@ -442,6 +442,12 @@
 
 .reveal .table-tiny table {
   font-size: 0.5em;
+  line-height: 1em !important;
+  vertical-align: top;
+}
+
+.reveal .table-tiny table {
+  font-size: 0.5em;
   line-height: 1.2em !important;
   vertical-align: top;
 }
